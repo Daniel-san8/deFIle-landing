@@ -17,6 +17,12 @@ export default function Home() {
           <button className="bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</button>
         </div>
       </main>
+
+      <section className={`${merriweather.className} bg-amber-950 text-center text-[var(--color-text-primary)] font-bold`}>
+        <h1 className="text-white text-5xl pt-28">Sobre a DeFile</h1>
+        <p className={`${openSans.className} text-base px-80 pt-4 pb-9`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
+        </p>
+      </section>
     </>
   );
 }
