@@ -22,6 +22,21 @@ export default function Home() {
         <h1 className="text-white text-5xl pt-28">Sobre a DeFile</h1>
         <p className={`${openSans.className} text-base px-80 pt-4 pb-9`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>
+
+        <div className={`${merriweather.className} flex gap-7 justify-center text-white px-40 pb-20`}>
+          <div className="flex-1 rounded-3xl" style={{
+            background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
+          }}>
+            <h2 className="text-3xl pt-11">Benefícios</h2>
+            <p className={`${openSans.className} text-base pt-14 px-16 font-bold`}>Maior autonomia, controle e segurança dos usuários frente aos seus documentos digitais.</p>
+          </div>
+          <div className="flex-1 rounded-3xl" style={{
+            background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
+          }}>
+            <h2 className="text-3xl pt-11">Diferencial</h2>
+            <p className={`${openSans.className} text-base pt-10 pb-6 px-16 font-bold`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
+          </div>
+        </div>
       </section>
     </>
   );
