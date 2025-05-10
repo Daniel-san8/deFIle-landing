@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       <section className={`${openSans.className} bg-[var(--color-bg-secondary)] text-center`}>
-        <h3 className="text-white text-3xl pt-16 pb-8">Gostou da ideia do Projeto?</h3>
+        <h3 className="text-white text-3xl pt-16 pb-8 font-bold">Gostou da ideia do Projeto?</h3>
         <p className="text-base font-bold text-[var(--color-text-primary)] pb-5 lg:pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
 
         <form className="flex flex-col gap-6 px-6 justify-center pb-6 md:px-44 lg:pb-20">
