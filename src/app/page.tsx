@@ -1,4 +1,4 @@
-import { PiLock, PiWhatsappLogo } from "react-icons/pi";
+import { PiDiscordLogo, PiGithubLogo, PiInstagramLogo, PiLock, PiWhatsappLogo, PiXLogo } from "react-icons/pi";
 import { merriweather, openSans } from "./fonts/fonts";
 import { FaBuilding } from "react-icons/fa";
 
@@ -153,6 +153,28 @@ export default function Home() {
 
         <button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-2xl px-36 py-2 cursor-pointer">Torne-se um Parceiro</button>
       </section>
+
+      <footer className={`${openSans.className} flex justify-between bg-[var(--color-bg-secondary)] items-center`}>
+        <div className="flex gap-20 py-36 pl-24 items-center">
+          <PiWhatsappLogo size={150} color="green" />
+          <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
+            <li>Empresa</li>
+            <li>Sobre</li>
+            <li>Recursos</li>
+            <li>Ajuda</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-y-3 pr-24 text-center">
+          <p className="text-[var(--color-text-primary)] text-sm font-bold">Siga Nossas Redes Sociais</p>
+          <div className="w-full h-1 bg-[var(--color-button-primary)] rounded-full"></div>
+          <div className="flex gap-6">
+            <PiDiscordLogo size={50} color="white" />
+            <PiInstagramLogo size={50} color="white" />
+            <PiXLogo size={50} color="white" />
+            <PiGithubLogo size={50} color="white" />
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
