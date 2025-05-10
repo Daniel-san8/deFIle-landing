@@ -1,5 +1,6 @@
 import { PiLock, PiWhatsappLogo } from "react-icons/pi";
 import { merriweather, openSans } from "./fonts/fonts";
+import { FaBuilding } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -123,8 +124,34 @@ export default function Home() {
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
 
-          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2">Enviar</button></div>
+          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">Enviar</button></div>
         </form>
+      </section>
+
+      <section className={`${openSans.className} text-center bg-[var(--color-bg-primary)] px-11 pb-12`}>
+        <h1 className={`${merriweather.className} text-white text-5xl pt-16 pb-5`}>Parcerias</h1>
+        <p className="text-[var(--color-text-primary)] text-base font-bold pb-5">
+          Junte-se a nós e destaque sua marca
+        </p>
+
+        <div className="w-full h-1 bg-[var(--color-button-primary)] mb-11 rounded-full"></div>
+
+        <div className="flex gap-48 justify-center pb-32">
+          <div className="flex flex-col gap-y-6 items-center gap-x-11 flex-1 border-2 border-[var(--color-button-primary)] border-dotted rounded-3xl p-8">
+            <FaBuilding size={80} color="#1dc95d" />
+            <p className="text-[var(--color-text-primary)] font-bold text-base">Sua Empresa Aqui</p>
+          </div>
+          <div className="flex flex-col gap-y-6 items-center gap-x-11 flex-1 border-2 border-[var(--color-button-primary)] border-dotted rounded-3xl p-8">
+            <FaBuilding size={80} color="#1dc95d" />
+            <p className="text-[var(--color-text-primary)] font-bold text-base">Sua Empresa Aqui</p>
+          </div>
+          <div className="flex flex-col gap-y-6 items-center flex-1 border-2 border-[var(--color-button-primary)] border-dotted rounded-3xl p-8">
+            <FaBuilding size={80} color="#1dc95d" />
+            <p className="text-[var(--color-text-primary)] font-bold text-base">Sua Empresa Aqui</p>
+          </div>
+        </div>
+
+        <button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-2xl px-36 py-2 cursor-pointer">Torne-se um Parceiro</button>
       </section>
     </>
   );
