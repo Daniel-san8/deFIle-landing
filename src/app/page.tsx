@@ -39,24 +39,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${merriweather.className} text-center bg-[var(--color-bg-primary)]`}>
+      <section className={`${merriweather.className} text-center bg-[var(--color-bg-primary)] pb-12`}>
         <h1 className="text-5xl pt-12 text-white">Propósito</h1>
         <p className={`${openSans.className} pt-6 text-[var(--color-text-primary)] font-bold pb-16`}>Fornecer a melhor experiência em armazenamento de dados</p>
 
         <div className={`${openSans.className} flex gap-6 px-7`}>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Missão</h3>
-            <p className="pt-28 text-[var(--color-text-primary)] text-base px-12 font-bold">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
+            <p className="pt-28 text-[var(--color-text-primary)] text-base px-24 font-bold">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
           </div>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-5 font-bold">Visão</h3>
-            <p className="pt-28 text-[var(--color-text-primary)] text-base px-16 font-bold">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
+            <p className="pt-28 text-[var(--color-text-primary)] text-base px-24 font-bold">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
           </div>
 
 
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Valores</h3>
-            <div className="flex flex-col pt-16 items-center pb-6">
+            <div className="flex flex-col pt-16 items-center pb-6 gap-y-4">
               <div className="flex-col gap-y-1">
                 <div className="flex items-center justify-center gap-1"><PiLock size={20} color="#1dc95d" /> <span className="text-base font-bold text-[var(--color-text-primary)]">Segurança</span>
                 </div>
@@ -111,6 +111,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={`${openSans.className} bg-[var(--color-bg-secondary)] text-center`}>
+        <h3 className="text-white text-3xl pt-16 pb-8">Gostou da ideia do Projeto?</h3>
+        <p className="text-base font-bold text-[var(--color-text-primary)] pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
+
+
+        <form className="flex flex-col gap-6 px-44 justify-center pb-20">
+          <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Nome Completo" />
+          <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
+          <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
+
+          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2">Enviar</button></div>
+        </form>
       </section>
     </>
   );
