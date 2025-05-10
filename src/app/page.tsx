@@ -1,4 +1,4 @@
-import { PiWhatsappLogo } from "react-icons/pi";
+import { PiLock, PiWhatsappLogo } from "react-icons/pi";
 import { merriweather, openSans } from "./fonts/fonts";
 
 export default function Home() {
@@ -35,6 +35,80 @@ export default function Home() {
           }}>
             <h2 className="text-3xl pt-11">Diferencial</h2>
             <p className={`${openSans.className} text-base pt-10 pb-6 px-16 font-bold`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${merriweather.className} text-center bg-[var(--color-bg-primary)]`}>
+        <h1 className="text-5xl pt-12 text-white">Propósito</h1>
+        <p className={`${openSans.className} pt-6 text-[var(--color-text-primary)] font-bold pb-16`}>Fornecer a melhor experiência em armazenamento de dados</p>
+
+        <div className={`${openSans.className} flex gap-6 px-7`}>
+          <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
+            <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Missão</h3>
+            <p className="pt-28 text-[var(--color-text-primary)] text-base px-12 font-bold">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
+          </div>
+          <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
+            <h3 className="text-[var(--color-button-primary)] text-2xl pt-5 font-bold">Visão</h3>
+            <p className="pt-28 text-[var(--color-text-primary)] text-base px-16 font-bold">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
+          </div>
+
+
+          <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
+            <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Valores</h3>
+            <div className="flex flex-col pt-16 items-center pb-6">
+              <div className="flex-col gap-y-1">
+                <div className="flex items-center justify-center gap-1"><PiLock size={20} color="#1dc95d" /> <span className="text-base font-bold text-[var(--color-text-primary)]">Segurança</span>
+                </div>
+                <p className="text-sm text-[var(--color-text-primary)] px-10">
+                  Garantir a proteção absoluta dos dados dos usuários.
+                </p>
+              </div>
+              <div className="flex-col gap-y-1">
+                <div className="flex items-center justify-center gap-1">
+                  <PiLock size={20} color="#1dc95d" />
+                  <span className="text-base font-bold text-[var(--color-text-primary)]">
+                    Descentralização
+                  </span>
+                </div>
+                <p className="text-sm text-[var(--color-text-primary)] px-10">
+                  Remover qualquer ponto único de falha ou controle.
+                </p>
+              </div>
+              <div className="flex-col gap-y-1">
+                <div className="flex items-center justify-center gap-1">
+                  <PiLock size={20} color="#1dc95d" />
+                  <span className="text-base font-bold text-[var(--color-text-primary)]">
+                    Transparência
+                  </span>
+                </div>
+                <p className="text-sm text-[var(--color-text-primary)] px-10">
+                  Registrar todas as transações e processos na blockchain.
+                </p>
+              </div>
+              <div className="flex-col gap-y-1">
+                <div className="flex items-center justify-center gap-1">
+                  <PiLock size={20} color="#1dc95d" />
+                  <span className="text-base font-bold text-[var(--color-text-primary)]">
+                    Simplicidade
+                  </span>
+                </div>
+                <p className="text-sm text-[var(--color-text-primary)] px-10">
+                  Criar uma experiência intuitiva para adoção em massa.
+                </p>
+              </div>
+              <div className="flex-col gap-y-1">
+                <div className="flex items-center justify-center gap-1">
+                  <PiLock size={20} color="#1dc95d" />
+                  <span className="text-base font-bold text-[var(--color-text-primary)]">
+                    Inovação Contínua
+                  </span>
+                </div>
+                <p className="text-sm text-[var(--color-text-primary)] px-10">
+                  Buscar melhorias tecnológicas constantes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
