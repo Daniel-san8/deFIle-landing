@@ -168,10 +168,10 @@ export default function Home() {
           <p className="text-[var(--color-text-primary)] text-sm font-bold">Siga Nossas Redes Sociais</p>
           <div className="w-full h-1 bg-[var(--color-button-primary)] rounded-full"></div>
           <div className="flex gap-6">
-            <PiDiscordLogo size={50} color="white" />
-            <PiInstagramLogo size={50} color="white" />
-            <PiXLogo size={50} color="white" />
-            <PiGithubLogo size={50} color="white" />
+            <PiDiscordLogo size={50} color="white" className="cursor-pointer" />
+            <PiInstagramLogo size={50} color="white" className="cursor-pointer" />
+            <PiXLogo size={50} color="white" className="cursor-pointer" />
+            <PiGithubLogo size={50} color="white" className="cursor-pointer" />
           </div>
         </div>
       </footer>
