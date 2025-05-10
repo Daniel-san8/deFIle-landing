@@ -21,21 +21,21 @@ export default function Home() {
 
       <section className={`${merriweather.className} bg-amber-950 text-center text-[var(--color-text-primary)] font-bold`}>
         <h1 className="text-white text-5xl pt-28">Sobre a DeFile</h1>
-        <p className={`${openSans.className} text-base px-80 pt-4 pb-9`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
+        <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>
 
         <div className={`${merriweather.className} flex gap-7 justify-center text-white px-40 pb-20`}>
-          <div className="flex-1 rounded-3xl" style={{
+          <div className="flex-1 rounded-3xl px-16" style={{
             background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
           }}>
             <h2 className="text-3xl pt-11">Benefícios</h2>
-            <p className={`${openSans.className} text-base pt-14 px-16 font-bold`}>Maior autonomia, controle e segurança dos usuários frente aos seus documentos digitais.</p>
+            <p className={`${openSans.className} text-base pt-14  font-bold`}>Maior autonomia, controle e segurança dos usuários frente aos seus documentos digitais.</p>
           </div>
-          <div className="flex-1 rounded-3xl" style={{
+          <div className="flex-1 rounded-3xl px-16" style={{
             background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
           }}>
             <h2 className="text-3xl pt-11">Diferencial</h2>
-            <p className={`${openSans.className} text-base pt-10 pb-6 px-16 font-bold`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
+            <p className={`${openSans.className} text-base pt-10 pb-6 font-bold`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
           </div>
         </div>
       </section>
@@ -47,17 +47,17 @@ export default function Home() {
         <div className={`${openSans.className} flex flex-col gap-6 px-7 lg:flex-row`}>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Missão</h3>
-            <p className="pt-28 text-[var(--color-text-primary)] text-base px-24 font-bold">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
+            <p className="py-3 text-[var(--color-text-primary)] text-base px-24 font-bold lg:pt-28 lg:py-0">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
           </div>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-5 font-bold">Visão</h3>
-            <p className="pt-28 text-[var(--color-text-primary)] text-base px-24 font-bold">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
+            <p className="py-3 text-[var(--color-text-primary)] text-base px-24 font-bold lg:pt-28 lg:py-0">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
           </div>
 
 
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Valores</h3>
-            <div className="flex flex-col pt-16 items-center pb-6 gap-y-4">
+            <div className="flex flex-col pt-4 items-center pb-6 gap-y-4 lg:pt-16">
               <div className="flex-col gap-y-1">
                 <div className="flex items-center justify-center gap-1"><PiLock size={20} color="#1dc95d" /> <span className="text-base font-bold text-[var(--color-text-primary)]">Segurança</span>
                 </div>
@@ -116,10 +116,10 @@ export default function Home() {
 
       <section className={`${openSans.className} bg-[var(--color-bg-secondary)] text-center`}>
         <h3 className="text-white text-3xl pt-16 pb-8">Gostou da ideia do Projeto?</h3>
-        <p className="text-base font-bold text-[var(--color-text-primary)] pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
+        <p className="text-base font-bold text-[var(--color-text-primary)] pb-5 lg:pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
 
 
-        <form className="flex flex-col gap-6 px-44 justify-center pb-20">
+        <form className="flex flex-col gap-6 px-44 justify-center pb-6 lg:pb-20">
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Nome Completo" />
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
@@ -136,7 +136,7 @@ export default function Home() {
 
         <div className="w-full h-1 bg-[var(--color-button-primary)] mb-11 rounded-full"></div>
 
-        <div className="flex flex-col gap-6 justify-center pb-32 lg:flex-row lg:gap-48">
+        <div className="flex flex-col gap-6 justify-center pb-16 lg:pb-32 lg:flex-row lg:gap-48">
           <div className="flex flex-col gap-y-6 items-center gap-x-11 flex-1 border-2 border-[var(--color-button-primary)] border-dotted rounded-3xl p-8">
             <FaBuilding size={80} color="#1dc95d" />
             <p className="text-[var(--color-text-primary)] font-bold text-base">Sua Empresa Aqui</p>
@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       <footer className={`${openSans.className} flex justify-between bg-[var(--color-bg-secondary)] items-center`}>
-        <div className="flex gap-20 py-36 pl-24 items-center">
+        <div className="flex gap-6 py-36 pl-12 items-center lg:gap-20 lg:pl-24">
           <PiWhatsappLogo size={150} color="green" />
           <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
             <li>Empresa</li>
@@ -164,7 +164,7 @@ export default function Home() {
             <li>Ajuda</li>
           </ul>
         </div>
-        <div className="flex flex-col gap-y-3 pr-24 text-center">
+        <div className="flex flex-col gap-y-3 pr-12 text-center lg:pr-24">
           <p className="text-[var(--color-text-primary)] text-sm font-bold">Siga Nossas Redes Sociais</p>
           <div className="w-full h-1 bg-[var(--color-button-primary)] rounded-full"></div>
           <div className="flex gap-6">
