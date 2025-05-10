@@ -10,9 +10,9 @@ export default function Home() {
       </header>
       <main className={`${merriweather.className} text-center text-white bg-black`}>
         <h1 className="text-6xl pt-11">DeFile</h1>
-        <p className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold`}>Sistema de armazenamento em Blockchain</p>
+        <p className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-3 px-6 md:px-0 md:pt-0`}>Sistema de armazenamento em Blockchain</p>
 
-        <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-16 px-32 pb-16 lg:px-96 lg:pt-36 lg:pb-32`}>
+        <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-8 px-4 pb-16 md:pt-16 md:px-32 lg:px-96 lg:pt-36 lg:pb-32`}>
           <p>A DeFile é uma plataforma de armazenamento de dados seguro via blockchain. Nosso objetivo é oferecer aos usuários total autonomia, segurança e descentralização de seus dados
           </p>
           <button className="bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</button>
@@ -20,22 +20,22 @@ export default function Home() {
       </main>
 
       <section className={`${merriweather.className} bg-amber-950 text-center text-[var(--color-text-primary)] font-bold`}>
-        <h1 className="text-white text-5xl pt-28">Sobre a DeFile</h1>
+        <h1 className="text-white text-5xl pt-14 px-5 md:px-0 md:pt-28">Sobre a DeFile</h1>
         <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>
 
-        <div className={`${merriweather.className} flex gap-7 justify-center text-white px-40 pb-20`}>
+        <div className={`${merriweather.className} flex flex-col gap-7 justify-center text-white px-6 pb-20 md:flex-row md:px-40`}>
           <div className="flex-1 rounded-3xl px-16" style={{
             background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
           }}>
             <h2 className="text-3xl pt-11">Benefícios</h2>
-            <p className={`${openSans.className} text-base pt-14  font-bold`}>Maior autonomia, controle e segurança dos usuários frente aos seus documentos digitais.</p>
+            <p className={`${openSans.className} text-base py-4 font-bold md:pt-14 md:py-0`}>Maior autonomia, controle e segurança dos usuários frente aos seus documentos digitais.</p>
           </div>
           <div className="flex-1 rounded-3xl px-16" style={{
             background: 'linear-gradient(to bottom, var(--color-button-primary) 10%, var(--color-header) 10%)',
           }}>
             <h2 className="text-3xl pt-11">Diferencial</h2>
-            <p className={`${openSans.className} text-base pt-10 pb-6 font-bold`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
+            <p className={`${openSans.className} text-base pt-4 pb-6 font-bold md:pt-10`}>Estrutura decentralizada, que preza pelo cuidado do armazenamento dos seus dados, provendo maior segurança frente a meios tradicionais.</p>
           </div>
         </div>
       </section>
@@ -47,11 +47,11 @@ export default function Home() {
         <div className={`${openSans.className} flex flex-col gap-6 px-7 lg:flex-row`}>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Missão</h3>
-            <p className="py-3 text-[var(--color-text-primary)] text-base px-24 font-bold lg:pt-28 lg:py-0">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
+            <p className="py-3 text-[var(--color-text-primary)] text-base px-6 font-bold md:px-24 lg:pt-28 lg:py-0">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
           </div>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-5 font-bold">Visão</h3>
-            <p className="py-3 text-[var(--color-text-primary)] text-base px-24 font-bold lg:pt-28 lg:py-0">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
+            <p className="py-3 text-[var(--color-text-primary)] text-base px-6 font-bold md:px-24 lg:pt-28 lg:py-0">Ser a principal plataforma de armazenamento descentralizado do mundo, garantindo segurança, acessibilidade e autonomia digital para milhões de usuários.</p>
           </div>
 
 
@@ -119,7 +119,7 @@ export default function Home() {
         <p className="text-base font-bold text-[var(--color-text-primary)] pb-5 lg:pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
 
 
-        <form className="flex flex-col gap-6 px-44 justify-center pb-6 lg:pb-20">
+        <form className="flex flex-col gap-6 px-6 justify-center pb-6 md:px-44 lg:pb-20">
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Nome Completo" />
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
           <input className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
@@ -151,11 +151,11 @@ export default function Home() {
           </div>
         </div>
 
-        <button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-2xl px-36 py-2 cursor-pointer">Torne-se um Parceiro</button>
+        <button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-2xl px-6 py-2 cursor-pointer md:px-36">Torne-se um Parceiro</button>
       </section>
 
-      <footer className={`${openSans.className} flex justify-between bg-[var(--color-bg-secondary)] items-center`}>
-        <div className="flex gap-6 py-36 pl-12 items-center lg:gap-20 lg:pl-24">
+      <footer className={`${openSans.className} flex flex-col justify-between bg-[var(--color-bg-secondary)] items-center md:flex-row`}>
+        <div className="flex gap-6 py-12 items-center md:py-36 md:pl-12 lg:pl-24 lg:gap-20">
           <PiWhatsappLogo size={150} color="green" />
           <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
             <li>Empresa</li>
@@ -164,7 +164,7 @@ export default function Home() {
             <li>Ajuda</li>
           </ul>
         </div>
-        <div className="flex flex-col gap-y-3 pr-12 text-center lg:pr-24">
+        <div className="flex flex-col pb-6 gap-y-3 text-center md:pr-12 md:pb-0 lg:pr-24">
           <p className="text-[var(--color-text-primary)] text-sm font-bold">Siga Nossas Redes Sociais</p>
           <div className="w-full h-1 bg-[var(--color-button-primary)] rounded-full"></div>
           <div className="flex gap-6">
