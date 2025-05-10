@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-6xl pt-11">DeFile</h1>
         <p className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold`}>Sistema de armazenamento em Blockchain</p>
 
-        <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-36 px-96 pb-32`}>
+        <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-16 px-32 pb-16 lg:px-96 lg:pt-36 lg:pb-32`}>
           <p>A DeFile é uma plataforma de armazenamento de dados seguro via blockchain. Nosso objetivo é oferecer aos usuários total autonomia, segurança e descentralização de seus dados
           </p>
           <button className="bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</button>
