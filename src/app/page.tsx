@@ -44,7 +44,7 @@ export default function Home() {
         <h1 className="text-5xl pt-12 text-white">Propósito</h1>
         <p className={`${openSans.className} pt-6 text-[var(--color-text-primary)] font-bold pb-16`}>Fornecer a melhor experiência em armazenamento de dados</p>
 
-        <div className={`${openSans.className} flex gap-6 px-7`}>
+        <div className={`${openSans.className} flex flex-col gap-6 px-7 lg:flex-row`}>
           <div className="flex-1 bg-[var(--color-bg-secondary)] rounded-4xl">
             <h3 className="text-[var(--color-button-primary)] text-2xl pt-7 font-bold">Missão</h3>
             <p className="pt-28 text-[var(--color-text-primary)] text-base px-24 font-bold">Proteger a privacidade digital e garantir o controle total dos usuários sobre seus arquivos, oferecendo armazenamento seguro, descentralizado e imutável.</p>
@@ -136,7 +136,7 @@ export default function Home() {
 
         <div className="w-full h-1 bg-[var(--color-button-primary)] mb-11 rounded-full"></div>
 
-        <div className="flex gap-48 justify-center pb-32">
+        <div className="flex flex-col gap-6 justify-center pb-32 lg:flex-row lg:gap-48">
           <div className="flex flex-col gap-y-6 items-center gap-x-11 flex-1 border-2 border-[var(--color-button-primary)] border-dotted rounded-3xl p-8">
             <FaBuilding size={80} color="#1dc95d" />
             <p className="text-[var(--color-text-primary)] font-bold text-base">Sua Empresa Aqui</p>
