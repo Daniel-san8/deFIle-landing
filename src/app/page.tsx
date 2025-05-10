@@ -8,7 +8,7 @@ export default function Home() {
       <header className="bg-[var(--color-header)]">
         <PiWhatsappLogo className="pl-10" size={100} />
       </header>
-      <main className={`${merriweather.className} text-center text-white bg-no-repeat bg-black bg-[url(/assets/bg7.png)]`}>
+      <main className={`${merriweather.className} text-center text-white bg-cover bg-[url(/assets/bg7.png)]`}>
         <h1 className="text-6xl pt-11">DeFile</h1>
         <p className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-3 px-6 md:px-0 md:pt-0`}>Sistema de armazenamento em Blockchain</p>
 
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section className={`${merriweather.className} bg-amber-950 text-center text-[var(--color-text-primary)] font-bold bg-[url(/assets/bg8.png)] bg-no-repeat`}>
+      <section className={`${merriweather.className} text-center text-[var(--color-text-primary)] font-bold bg-[url(/assets/bg8.png)] bg-cover`}>
         <h1 className="text-white text-5xl pt-14 px-5 md:px-0 md:pt-28">Sobre a DeFile</h1>
         <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>

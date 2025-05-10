@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased ${openSans.className} max-w-[1440px] bg-[var(--color-bg-primary)] flex flex-col items-center`}
+        className={`antialiased ${openSans.className} max-w-[1440px] bg-[var(--color-bg-primary)] mx-auto`}
       >
         {children}
       </body>
