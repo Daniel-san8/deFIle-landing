@@ -164,7 +164,7 @@ export default function Home() {
           <input {...register("contact")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
           {errors.contact && <span className="text-start text-red-400">Digite um telefone válido</span>}
 
-          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">{loading ? <Loading /> : "Enviar"}</button></div>
+          <div><button disabled={loading} className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">{loading ? <Loading /> : "Enviar"}</button></div>
         </form>
       </section>
 
@@ -209,9 +209,15 @@ export default function Home() {
           <div className="w-full h-1 bg-[var(--color-button-primary)] rounded-full"></div>
           <div className="flex gap-6">
             <PiDiscordLogo size={50} color="white" className="cursor-pointer" />
-            <PiInstagramLogo size={50} color="white" className="cursor-pointer" />
-            <PiXLogo size={50} color="white" className="cursor-pointer" />
-            <PiGithubLogo size={50} color="white" className="cursor-pointer" />
+            <a href="https://www.instagram.com/dfile_block?igsh=MXc4dzN2aDZoYjc5bg%3D%3D&utm_source=qr" target="_blank">
+              <PiInstagramLogo size={50} color="white" />
+            </a>
+            <a href="https://x.com/dfile_block?s=11" target="_blank">
+              <PiXLogo size={50} color="white" />
+            </a>
+            <a href="https://github.com/dFile-web3" target="_blank">
+              <PiGithubLogo size={50} color="white" />
+            </a>
           </div>
         </div>
       </footer>

@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased ${openSans.className} max-w-[1800px] bg-[var(--color-bg-primary)] mx-auto`}
+        className={`antialiased ${openSans.className} scroll-smooth max-w-[1800px] bg-[var(--color-bg-primary)] mx-auto`}
       >
         {children}
         <Toaster richColors
