@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { sendToSheets } from "./utils/send-to-sheets";
 import { toast } from "sonner";
 import { useState } from "react";
+import { Loading } from "@/Loading";
 
 
 const phoneRegex = /^[\+]?(\d{2})?[\s\(\)-]?\d{1,2}[\s\(\)-]?\d{4,5}[\s\-]?\d{4}$/;
@@ -156,13 +157,13 @@ export default function Home() {
 
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 px-6 justify-center pb-6 md:px-44 lg:pb-20">
           <input {...register("name")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Nome Completo" />
-          {errors.name && <span className="text-start">Digite um nome válido!</span>}
+          {errors.name && <span className="text-start text-red-400">Digite um nome válido!</span>}
           <input {...register("email")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
-          {errors.email && <span className="text-start">Digite um email válido!</span>}
+          {errors.email && <span className="text-start text-red-400">Digite um email válido!</span>}
           <input {...register("contact")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
-          {errors.contact && <span className="text-start">Digite um telefone válido</span>}
+          {errors.contact && <span className="text-start text-red-400">Digite um telefone válido</span>}
 
-          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">{loading ? "Carregando" : "Enviar"}</button></div>
+          <div><button className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">{loading ? <Loading /> : "Enviar"}</button></div>
         </form>
       </section>
 
