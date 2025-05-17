@@ -4,7 +4,7 @@ import { openSans } from "./fonts/fonts";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "De File",
+  title: "dFile",
   description: "Landing page para um produto on chain para salvamento de arquivos",
 };
 

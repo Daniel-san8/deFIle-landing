@@ -47,19 +47,19 @@ export default function Home() {
         <PiWhatsappLogo className="pl-10" size={100} />
       </header>
       <main className={`${merriweather.className} text-center text-white bg-cover bg-[url(/assets/bg7.png)]`}>
-        <h1 className="text-6xl pt-11">DeFile</h1>
+        <h1 className="text-6xl pt-11">dFile</h1>
         <p className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-3 px-6 md:px-0 md:pt-0`}>Sistema de armazenamento em Blockchain</p>
 
         <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-8 px-4 pb-16 md:pt-16 md:px-32 lg:px-96 lg:pt-36 lg:pb-32`}>
-          <p>A DeFile é uma plataforma de armazenamento de dados seguro via blockchain. Nosso objetivo é oferecer aos usuários total autonomia, segurança e descentralização de seus dados
+          <p>A dFile é uma plataforma de armazenamento de dados seguro via blockchain. Nosso objetivo é oferecer aos usuários total autonomia, segurança e descentralização de seus dados
           </p>
           <button className="bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</button>
         </div>
       </main>
 
       <section className={`${merriweather.className} text-center text-[var(--color-text-primary)] font-bold bg-[url(/assets/bg8.png)] bg-cover`}>
-        <h1 className="text-white text-5xl pt-14 px-5 md:px-0 md:pt-28">Sobre a DeFile</h1>
-        <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A DeFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
+        <h1 className="text-white text-5xl pt-14 px-5 md:px-0 md:pt-28">Sobre a dFile</h1>
+        <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A dFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>
 
         <div className={`${merriweather.className} flex flex-col gap-7 justify-center text-white px-6 pb-20 md:flex-row md:px-40`}>
