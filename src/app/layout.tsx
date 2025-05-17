@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { openSans } from "./fonts/fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "De File",
@@ -18,6 +19,8 @@ export default function RootLayout({
         className={`antialiased ${openSans.className} max-w-[1800px] bg-[var(--color-bg-primary)] mx-auto`}
       >
         {children}
+        <Toaster richColors
+        />
       </body>
     </html>
   );
