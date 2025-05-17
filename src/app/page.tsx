@@ -11,9 +11,9 @@ import { toast } from "sonner";
 import { useState } from "react";
 import { Loading } from "@/Loading";
 import Image from "next/image";
+import { IMaskInput } from "react-imask";
 
-
-const phoneRegex = /^[\+]?(\d{2})?[\s\(\)-]?\d{1,2}[\s\(\)-]?\d{4,5}[\s\-]?\d{4}$/;
+const phoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
 
 const schemaContact = z.object({
   name: z.string().min(3).max(35),
@@ -24,8 +24,9 @@ const schemaContact = z.object({
 type FormData = z.infer<typeof schemaContact>;
 
 export default function Home() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
-    resolver: zodResolver(schemaContact)
+  const { register, handleSubmit, formState: { errors, touchedFields }, setValue } = useForm<FormData>({
+    resolver: zodResolver(schemaContact),
+    mode: "onBlur"
   })
   const [loading, setLoading] = useState(false)
   const onSubmit = async (data: FormData) => {
@@ -161,8 +162,26 @@ export default function Home() {
           {errors.name && <span className="text-start text-red-400">Digite um nome válido!</span>}
           <input {...register("email")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Endereço de Email" />
           {errors.email && <span className="text-start text-red-400">Digite um email válido!</span>}
-          <input {...register("contact")} className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3" placeholder="Telefone para Contato" />
-          {errors.contact && <span className="text-start text-red-400">Digite um telefone válido</span>}
+
+          <IMaskInput
+            mask="(00) 00000-0000"
+            id="contact"
+            placeholder="(00) 00000-0000"
+            className="text-[var(--color-text-primary)] border border-[var(--color-button-primary)] rounded-3xl p-3 w-full"
+            {...register("contact", {
+              required: "Campo obrigatório",
+              validate: (value) =>
+                phoneRegex.test(value) || "Digite um telefone válido",
+            })}
+            onAccept={(value: string) => {
+              setValue("contact", value, { shouldValidate: true });
+            }}
+          />
+
+          {errors.contact && touchedFields.contact && (
+            <span className="text-start text-red-400">{errors.contact.message}</span>
+          )}
+
 
           <div><button disabled={loading} className="bg-transparent font-bold border-2 border-[var(--color-button-primary)] text-[var(--color-button-primary)] rounded-4xl px-14 py-2 cursor-pointer">{loading ? <Loading /> : "Enviar"}</button></div>
         </form>
