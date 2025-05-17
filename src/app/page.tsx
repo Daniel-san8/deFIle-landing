@@ -31,14 +31,14 @@ export default function Home() {
   const onSubmit = async (data: FormData) => {
     try {
       setLoading(true)
-      await sendToSheets(data);
+      const response = await sendToSheets(data);
+      if (!response.success) throw new Error(response.error)
       toast.success('Cadastro enviado com sucesso!');
     } catch (error) {
       if (error instanceof Error) toast.error(error.message);
     } finally {
       setLoading(false)
     }
-
   };
 
   return (
