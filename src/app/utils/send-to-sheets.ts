@@ -23,16 +23,27 @@ export async function sendToSheets({
   const spreadsheetId = process.env.SPREADSHEET_ID;
 
   try {
-    const getResponse = await sheets.spreadsheets.values.get({
+    const getResponseEmail = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: 'Leads!B:B',
     });
 
-    const rows = getResponse.data.values || [];
-    const emailExists = rows.some((row) => row[0] === email);
+    const getResponseContact = await sheets.spreadsheets.values.get({
+      spreadsheetId,
+      range: 'Leads!C:C',
+    });
+
+    const rowsEmail = getResponseEmail.data.values || [];
+    const rowsContact = getResponseContact.data.values || [];
+
+    const emailExists = rowsEmail.some((row) => row[0] === email);
+    const numberExists = rowsContact.some((row) => row[0] === contact);
 
     if (emailExists) {
       return { success: false, error: 'Email já cadastrado' };
+    }
+    if (numberExists) {
+      return { success: false, error: 'Número já cadastrado' };
     }
 
     await sheets.spreadsheets.values.append({
