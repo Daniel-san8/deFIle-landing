@@ -1,6 +1,6 @@
 "use client";
 
-import { PiDiscordLogo, PiGithubLogo, PiInstagramLogo, PiLock, PiWhatsappLogo, PiXLogo } from "react-icons/pi";
+import { PiDiscordLogo, PiGithubLogo, PiInstagramLogo, PiLock, PiXLogo } from "react-icons/pi";
 import { merriweather, openSans } from "./fonts/fonts";
 import { FaBuilding } from "react-icons/fa";
 import { z } from "zod";
@@ -10,6 +10,7 @@ import { sendToSheets } from "./utils/send-to-sheets";
 import { toast } from "sonner";
 import { useState } from "react";
 import { Loading } from "@/Loading";
+import Image from "next/image";
 
 
 const phoneRegex = /^[\+]?(\d{2})?[\s\(\)-]?\d{1,2}[\s\(\)-]?\d{4,5}[\s\-]?\d{4}$/;
@@ -44,7 +45,7 @@ export default function Home() {
 
     <>
       <header className="bg-[var(--color-header)]">
-        <PiWhatsappLogo className="pl-10" size={100} />
+        <Image src={"/assets/logo.png"} className="pl-10" height={100} width={100} alt="logo" />
       </header>
       <main className={`${merriweather.className} text-center text-white bg-cover bg-[url(/assets/bg7.png)]`}>
         <h1 className="text-6xl pt-11">dFile</h1>
@@ -195,7 +196,7 @@ export default function Home() {
 
       <footer className={`${openSans.className} flex flex-col justify-between bg-[var(--color-bg-secondary)] items-center md:flex-row`}>
         <div className="flex gap-6 py-12 items-center md:py-36 md:pl-12 lg:pl-24 lg:gap-20">
-          <PiWhatsappLogo size={150} color="green" />
+          <Image src={"/assets/logo.png"} className="pl-10" height={150} width={150} alt="logo" />
           <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
             <li>Empresa</li>
             <li>Sobre</li>
