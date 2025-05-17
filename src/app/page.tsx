@@ -54,11 +54,11 @@ export default function Home() {
         <div className={`${openSans.className} text-[var(--color-text-primary)] text-base font-bold pt-8 px-4 pb-16 md:pt-16 md:px-32 lg:px-96 lg:pt-36 lg:pb-32`}>
           <p>A dFile é uma plataforma de armazenamento de dados seguro via blockchain. Nosso objetivo é oferecer aos usuários total autonomia, segurança e descentralização de seus dados
           </p>
-          <button className="cursor-pointer bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</button>
+          <a className="inline-block cursor-pointer bg-[var(--color-button-primary)] mt-7 rounded-full px-16 py-3 text-white">Saiba Mais</a>
         </div>
       </main>
 
-      <section className={`${merriweather.className} text-center text-[var(--color-text-primary)] font-bold bg-[url(/assets/bg8.png)] bg-cover`}>
+      <section id="enterprise" className={`${merriweather.className} text-center text-[var(--color-text-primary)] font-bold bg-[url(/assets/bg8.png)] bg-cover`}>
         <h1 className="text-white text-5xl pt-14 px-5 md:px-0 md:pt-28">Sobre a dFile</h1>
         <p className={`${openSans.className} text-base px-16 pt-4 pb-9 lg:px-80`}>A dFile é uma plataforma inovadora que utiliza a tecnologia blockchain para oferecer aos usuários um serviço de armazenamento de dados seguro
         </p>
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${merriweather.className} text-center bg-[var(--color-bg-primary)] pb-12`}>
+      <section id="about" className={`${merriweather.className} text-center bg-[var(--color-bg-primary)] pb-12`}>
         <h1 className="text-5xl pt-12 text-white">Propósito</h1>
         <p className={`${openSans.className} pt-6 text-[var(--color-text-primary)] font-bold pb-16`}>Fornecer a melhor experiência em armazenamento de dados</p>
 
@@ -152,7 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${openSans.className} bg-[var(--color-bg-secondary)] text-center`}>
+      <section id="help" className={`${openSans.className} bg-[var(--color-bg-secondary)] text-center`}>
         <h3 className={`${merriweather.className} text-white text-3xl pt-16 pb-8 font-bold`}>Gostou da ideia do Projeto?</h3>
         <p className="text-base font-bold text-[var(--color-text-primary)] pb-5 lg:pb-24">Inscreva-se abaixo para estar recebendo atualizações exclusivas do projeto</p>
 
@@ -168,7 +168,7 @@ export default function Home() {
         </form>
       </section>
 
-      <section className={`${openSans.className} text-center bg-[var(--color-bg-primary)] px-11 pb-12`}>
+      <section id="resources" className={`${openSans.className} text-center bg-[var(--color-bg-primary)] px-11 pb-12`}>
         <h1 className={`${merriweather.className} text-white text-5xl pt-16 pb-5`}>Parcerias</h1>
         <p className="text-[var(--color-text-primary)] text-base font-bold pb-5">
           Junte-se a nós e destaque sua marca
@@ -198,10 +198,10 @@ export default function Home() {
         <div className="flex gap-6 py-12 items-center md:py-36 md:pl-12 lg:pl-24 lg:gap-20">
           <Image src={"/assets/logo.png"} className="pl-10" height={150} width={150} alt="logo" />
           <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
-            <li>Empresa</li>
-            <li>Sobre</li>
-            <li>Recursos</li>
-            <li>Ajuda</li>
+            <li><a href="#enterprise">Empresa</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#resources">Recursos</a></li>
+            <li><a href="#help">Ajuda</a></li>
           </ul>
         </div>
         <div className="flex flex-col pb-6 gap-y-3 text-center md:pr-12 md:pb-0 lg:pr-24">
