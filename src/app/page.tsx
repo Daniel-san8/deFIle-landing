@@ -46,7 +46,7 @@ export default function Home() {
 
     <>
       <header className="bg-[var(--color-header)]">
-        <Image src={"/assets/logo.png"} className="pl-10" height={100} width={100} alt="logo" />
+        <Image src={"/assets/logobg.png"} className="pl-10" height={200} width={200} alt="logo" />
       </header>
       <main className={`${merriweather.className} text-center text-white bg-cover bg-[url(/assets/bg7.png)]`}>
         <h1 className="text-6xl pt-11">dFile</h1>
@@ -215,7 +215,7 @@ export default function Home() {
 
       <footer className={`${openSans.className} flex flex-col justify-between bg-[var(--color-bg-secondary)] items-center md:flex-row`}>
         <div className="flex gap-6 py-12 items-center md:py-36 md:pl-12 lg:pl-24 lg:gap-20">
-          <Image src={"/assets/logo.png"} className="pl-10" height={150} width={150} alt="logo" />
+          <Image src={"/assets/logobg.png"} className="pl-10" height={200} width={200} alt="logo" />
           <ul className="text-[var(--color-text-primary)] text-sm flex flex-col gap-y-4 font-bold">
             <li><a href="#enterprise">Empresa</a></li>
             <li><a href="#about">Sobre</a></li>
